@@ -1,0 +1,62 @@
+.projects {
+  padding: 30px 30px 0 30px;
+
+  .project-item {
+    position: relative;
+    margin: 0 0 30px 0;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      .project-description {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-out;
+      }
+
+      .bl-thumbnail {
+        filter: contrast(100%) grayscale(0);
+        transform: scale3d(1.1, 1.1, 1.1);
+        transition: all .3s ease-out;
+      }
+    }
+
+    .project-text {
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      color: $text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        color: $light-primary;
+      }
+    }
+
+    .project-description {
+      background: rgba(0, 0, 0, 0.6);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+      padding: 5px 10px;
+      border-radius: 2px;
+      visibility: visible;
+      opacity: 1;
+      transition: all .3s ease-in;
+    }
+
+    .bl-thumbnail {
+      max-width: 100%;
+      filter: contrast(50%) grayscale(1);
+      transition: all .3s ease-in;
+      border-radius: 2px;
+    }
+
+  }
+}
