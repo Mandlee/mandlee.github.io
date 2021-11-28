@@ -1,0 +1,99 @@
+$fa-font-path: '../../static/webfonts';
+
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+//Navbar toggle
+.navbar-toggler-icon {
+    @include fa-icon;
+    @extend .fas;
+    height: auto;
+    width: auto;
+    color: $light-primary;
+
+    &:before {
+        content: fa-content($fa-var-bars);
+    }
+}
+
+//other icons
+.icon {
+    @include fa-icon;
+    @extend .fas;
+
+    &-work {
+        @extend .fa-4x;
+
+        &:before {
+            content: fa-content($fa-var-suitcase);
+        }
+    }
+
+    &-university {
+        @extend .fa-4x;
+
+        &:before {
+            content: fa-content($fa-var-graduation-cap);
+        }
+    }
+
+    &-phone {
+        @extend .fa-2x;
+
+        &:before {
+            content: fa-content($fa-var-phone);
+        }
+    }
+
+    &-email {
+        @extend .fa-2x;
+
+        &:before {
+            content: fa-content($fa-var-envelope);
+        }
+    }
+
+    &-location {
+        @extend .fa-2x;
+
+        &:before {
+            content: fa-content($fa-var-map-marker-alt);
+        }
+    }
+
+    &-linked-in {
+        @extend .fa-2x;
+        @extend .fab;
+
+        &:before {
+            content: fa-content($fa-var-linkedin);
+        }
+    }
+
+    &-html {
+        @extend .fa-3x;
+
+        &:before {
+            content: fa-content($fa-var-code);
+        }
+    }
+
+    &-framework {
+        @extend .fa-3x;
+        @extend .fab;
+
+        &:before {
+            content: fa-content($fa-var-react);
+        }
+    }
+
+    &-tools {
+        @extend .fa-3x;
+        @extend .fab;
+
+        &:before {
+            content: fa-content($fa-var-gulp);
+        }
+    }
+}
