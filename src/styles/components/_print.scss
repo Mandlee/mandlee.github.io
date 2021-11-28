@@ -1,0 +1,127 @@
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .card {
+        border: 0;
+        padding: 24px 32px;
+        margin-bottom: 0;
+    }
+
+    .about {
+        //margin-top: 100px;
+        .btn {
+            display: none;
+        }
+    }
+
+    .experience {
+        h1 {
+            margin: 0;
+        }
+    }
+
+    #university {
+        page-break-before: always;
+    }
+
+    .timeline {
+        &:before {
+            width: 0;
+        }
+
+        > li {
+            right: 0;
+            width: 100%;
+
+            &:before {
+                width: 0;
+                height: 0;
+            }
+
+            &:nth-child(even) {
+                left: 0;
+                padding: 0;
+                text-align: left;
+            }
+
+            &:nth-child(odd) {
+                left: 0;
+                text-align: left;
+            }
+        }
+
+        .icon {
+            display: none;
+        }
+    }
+
+    // .skills {
+    //     page-break-before: always;
+    //     margin-top: 32px;
+    // }
+
+    .projects {
+        img {
+            display: none;
+        }
+
+        .project-item {
+            margin: 0 0 20px 0;
+        }
+
+        .project-item .project-text {
+            position: relative;
+
+            h3 {
+                color: $primary-text;
+                font-size: 24px;
+            }
+
+            small {
+                color: $primary-text;
+            }
+        }
+
+        .project-item .project-description {
+            background: none;
+        }
+    }
+
+    .short-contact {
+        padding: 0;
+    }
+
+    #contact,
+    .short-contact {
+        background: white;
+        color: $primary-text;
+
+        a {
+            text-decoration: none;
+        }
+
+        h2,
+        h3,
+        .icon,
+        a,
+        p {
+            color: $primary-text;
+        }
+
+        .icon {
+            color: $primary-color;
+        }
+
+        .contact-row {
+            padding: 0;
+        }
+    }
+}
