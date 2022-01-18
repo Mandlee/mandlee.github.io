@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmandlee_github_io=self.webpackChunkmandlee_github_io||[]).push([[883],{9616:function(e,n,t){t.r(n);var a=t(7294);n.default=function(){return a.createElement("div",{className:"bg-slate-100"},"404 - Page not found")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-63b713679e6e46b382a6.js.map
