@@ -7,20 +7,10 @@
 module.exports = {
     siteMetadata: {},
     plugins: [
-        {
-            resolve: `gatsby-plugin-sass`,
-            options: {
-                cssLoaderOptions: {
-                    esModule: false,
-                    modules: {
-                        namedExport: false,
-                    },
-                },
-            },
-        },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        `gatsby-plugin-postcss`,
     ],
 };

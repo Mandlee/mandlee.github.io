@@ -1,39 +1,32 @@
 import React from 'react';
-import { FaHtml5, FaReact, FaCode } from 'react-icons/fa';
+
+const skills = [
+    'HTML5',
+    'JavaScript/ES6',
+    'Sass/CSS3',
+    'React.js',
+    'Next.js',
+    'Jest',
+    'Enzyme',
+    'Cypress',
+    'MUI',
+    'Accessibility',
+];
 
 const Skills = () => {
     return (
-        <section id="skills" className="skills card animated">
-            <h2>Skills & Knowledge</h2>
-            <div className="row">
-                <div className="col-lg-4 col-md-6">
-                    <FaHtml5 />
-                    <h3>Front-end Development</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>JavaScript/ES 6</li>
-                        <li>Sass/CSS3</li>
-                    </ul>
-                </div>
-                <div className="col-lg-4 col-md-6">
-                    <FaReact />
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li>React JS</li>
-                        <li>Next.js</li>
-                    </ul>
-                </div>
-                <div className="col-lg-4 col-md-12">
-                    <FaCode />
-                    <h3>Tools/Libs</h3>
-                    <ul>
-                        <li>Jest</li>
-                        <li>Enzyme</li>
-                        <li>Cypress</li>
-                        <li>MUI Styles</li>
-                    </ul>
-                </div>
-            </div>
+        <section id="skills">
+            <h2 className="text-2xl pb-4 font-medium">Skills</h2>
+            <ul className="grid grid-cols-2 md:block print:block">
+                {skills.map(skill => (
+                    <li
+                        key={skill}
+                        className="bg-slate-100 hover:bg-indigo-500 hover:text-slate-100 mr-2 mb-2 py-2 px-10 whitespace-nowrap md:inline-block print:p-0 text-xs"
+                    >
+                        {skill}
+                    </li>
+                ))}
+            </ul>
         </section>
     );
 };

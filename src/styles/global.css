@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h2 {
+        @apply text-xl;
+        @apply py-1;
+    }
+    section {
+        @apply py-4;
+    }
+    article:nth-child(5) {
+        page-break-before: always;
+    }
+}
